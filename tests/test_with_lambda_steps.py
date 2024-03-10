@@ -2,7 +2,7 @@ import allure
 from selene import browser, by, be
 
 
-def test_lambda_githab_issue():
+def test_lambda_github_issue():
     with allure.step("Открыть главную страницу GitHub"):
         browser.open('/')
 
