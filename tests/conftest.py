@@ -2,8 +2,8 @@ import pytest
 from selene import browser
 
 
-@pytest.fixture(scope='function', autouse=True)
-def browser_management():
+@pytest.fixture(autouse=True)
+def settings_browser():
     browser.config.base_url = 'https://github.com'
     browser.config.window_height = 1080
     browser.config.window_width = 1920
