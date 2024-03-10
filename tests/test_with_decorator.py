@@ -28,7 +28,7 @@ def should_see_issue_with_number(number):
     browser.element(by.partial_text('#' + number)).should(be.visible)
 
 
-def test_lambda_github_issue():
+def test_decorator_github_issue():
     open_browser()
     search_for_repository('zmamedov/qa_guru_HW10_allure')
     go_to_repository()
